@@ -21,7 +21,14 @@ namespace ProyectoJuego15.Interface
 
         private void Ranking_Load(object sender, EventArgs e)
         {
+            int P = 1;
             M.ShowDatagrid(dataGridView1);
+            this.dataGridView1.Sort(this.dataGridView1.Columns["PuntosTotales"], ListSortDirection.Descending);
+            for (int row = 0; row < 10; row++)
+            {
+                dataGridView1.Rows[row].Cells[0].Value = P;
+                P++;
+            }
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
