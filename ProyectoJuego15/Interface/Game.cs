@@ -13,30 +13,13 @@ namespace ProyectoJuego15.Interface
 {
     public partial class Game : Form
     {
-        public string Name;
-        public int Modo;
+        public string Name, h, m, s;
+        public int modo;
+
         Functions.Methods M = new Functions.Methods();
         public Game()
         {
             InitializeComponent();
-        }
-
-        private void BtnPay_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnBack_Click(object sender, EventArgs e)
-        {
-            Home H = new Home();
-            this.Hide();
-            H.Show();
-        }
-
-        private void BtnExit_Click(object sender, EventArgs e)
-        {
-
-
         }
 
         private void Game_Load(object sender, EventArgs e)
@@ -62,5 +45,207 @@ namespace ProyectoJuego15.Interface
             Btn15.Text = M.B15;
             Btn16.Text = M.B16;
         }
+        public void AsignarT()
+        {
+            M.tiempo = h + m + s;
+            M.h = h;
+            M.m = m;
+            M.s = s;
+        }
+
+        private void BtnPay_Click(object sender, EventArgs e)
+        {
+            if (modo == 1)
+            {
+                Btn1.Text = "1";
+                Btn2.Text = "2";
+                Btn3.Text = "3";
+                Btn4.Text = "4";
+                Btn5.Text = "5";
+                Btn6.Text = "6";
+                Btn7.Text = "7";
+                Btn8.Text = "8";
+                Btn9.Text = "9";
+                Btn10.Text = "10";
+                Btn11.Text = "11";
+                Btn12.Text = "12";
+                Btn13.Text = "13";
+                Btn14.Text = "14";
+                Btn15.Text = "15";
+                Btn16.Text = "";
+
+                //SW.Stop();
+                AsignarT();
+
+                Btn1.Enabled = false;
+                Btn2.Enabled = false;
+                Btn3.Enabled = false;
+                Btn4.Enabled = false;
+                Btn5.Enabled = false;
+                Btn6.Enabled = false;
+                Btn7.Enabled = false;
+                Btn8.Enabled = false;
+                Btn9.Enabled = false;
+                Btn10.Enabled = false;
+                Btn11.Enabled = false;
+                Btn12.Enabled = false;
+                Btn13.Enabled = false;
+                Btn14.Enabled = false;
+                Btn15.Enabled = false;
+                Btn16.Enabled = false;
+
+                MessageBox.Show("Usted ha perdido :'(", "Rompecabezas numérico en orden Izquierda-Derecha",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                M.Rendirse = true;
+
+                M.Insert1();
+            }
+
+            else
+            {
+                Btn1.Text = "1";
+                Btn2.Text = "5";
+                Btn3.Text = "9";
+                Btn4.Text = "13";
+                Btn5.Text = "2";
+                Btn6.Text = "6";
+                Btn7.Text = "10";
+                Btn8.Text = "14";
+                Btn9.Text = "3";
+                Btn10.Text = "7";
+                Btn11.Text = "11";
+                Btn12.Text = "15";
+                Btn13.Text = "4";
+                Btn14.Text = "8";
+                Btn15.Text = "12";
+                Btn16.Text = "";
+
+                Btn1.Enabled = false;
+                Btn2.Enabled = false;
+                Btn3.Enabled = false;
+                Btn4.Enabled = false;
+                Btn5.Enabled = false;
+                Btn6.Enabled = false;
+                Btn7.Enabled = false;
+                Btn8.Enabled = false;
+                Btn9.Enabled = false;
+                Btn10.Enabled = false;
+                Btn11.Enabled = false;
+                Btn12.Enabled = false;
+                Btn13.Enabled = false;
+                Btn14.Enabled = false;
+                Btn15.Enabled = false;
+                Btn16.Enabled = false;
+
+                //SW.Stop();
+                AsignarT();
+
+                MessageBox.Show("Usted ha perdido :'(", "Rompecabezas numérico en orden Arriba-Abajo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                M.Rendirse = true;
+
+                M.Insert1();
+
+            }
+
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Home H = new Home();
+            this.Hide();
+            H.Show();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void Btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
     }
 }

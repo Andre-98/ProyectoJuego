@@ -96,6 +96,7 @@ namespace ProyectoJuego15.Interface
             this.Btn16.Size = new System.Drawing.Size(57, 51);
             this.Btn16.TabIndex = 16;
             this.Btn16.UseVisualStyleBackColor = true;
+            this.Btn16.Click += new System.EventHandler(this.Btn16_Click);
             // 
             // Btn11
             // 
@@ -106,6 +107,7 @@ namespace ProyectoJuego15.Interface
             this.Btn11.TabIndex = 11;
             this.Btn11.Text = "11";
             this.Btn11.UseVisualStyleBackColor = true;
+            this.Btn11.Click += new System.EventHandler(this.Btn11_Click);
             // 
             // Btn6
             // 
@@ -116,6 +118,7 @@ namespace ProyectoJuego15.Interface
             this.Btn6.TabIndex = 6;
             this.Btn6.Text = "6";
             this.Btn6.UseVisualStyleBackColor = true;
+            this.Btn6.Click += new System.EventHandler(this.Btn6_Click);
             // 
             // Btn15
             // 
@@ -126,6 +129,7 @@ namespace ProyectoJuego15.Interface
             this.Btn15.TabIndex = 15;
             this.Btn15.Text = "15";
             this.Btn15.UseVisualStyleBackColor = true;
+            this.Btn15.Click += new System.EventHandler(this.Btn15_Click);
             // 
             // Btn9
             // 
@@ -136,6 +140,7 @@ namespace ProyectoJuego15.Interface
             this.Btn9.TabIndex = 9;
             this.Btn9.Text = "9";
             this.Btn9.UseVisualStyleBackColor = true;
+            this.Btn9.Click += new System.EventHandler(this.Btn9_Click);
             // 
             // Btn10
             // 
@@ -146,6 +151,7 @@ namespace ProyectoJuego15.Interface
             this.Btn10.TabIndex = 10;
             this.Btn10.Text = "10";
             this.Btn10.UseVisualStyleBackColor = true;
+            this.Btn10.Click += new System.EventHandler(this.Btn10_Click);
             // 
             // Btn1
             // 
@@ -156,6 +162,7 @@ namespace ProyectoJuego15.Interface
             this.Btn1.TabIndex = 1;
             this.Btn1.Text = "1";
             this.Btn1.UseVisualStyleBackColor = true;
+            this.Btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // Btn7
             // 
@@ -166,6 +173,7 @@ namespace ProyectoJuego15.Interface
             this.Btn7.TabIndex = 7;
             this.Btn7.Text = "7";
             this.Btn7.UseVisualStyleBackColor = true;
+            this.Btn7.Click += new System.EventHandler(this.Btn7_Click);
             // 
             // Btn5
             // 
@@ -176,6 +184,7 @@ namespace ProyectoJuego15.Interface
             this.Btn5.TabIndex = 5;
             this.Btn5.Text = "5";
             this.Btn5.UseVisualStyleBackColor = true;
+            this.Btn5.Click += new System.EventHandler(this.Btn5_Click);
             // 
             // Btn14
             // 
@@ -186,6 +195,7 @@ namespace ProyectoJuego15.Interface
             this.Btn14.TabIndex = 14;
             this.Btn14.Text = "14";
             this.Btn14.UseVisualStyleBackColor = true;
+            this.Btn14.Click += new System.EventHandler(this.Btn14_Click);
             // 
             // Btn8
             // 
@@ -196,6 +206,7 @@ namespace ProyectoJuego15.Interface
             this.Btn8.TabIndex = 8;
             this.Btn8.Text = "8";
             this.Btn8.UseVisualStyleBackColor = true;
+            this.Btn8.Click += new System.EventHandler(this.Btn8_Click);
             // 
             // Btn4
             // 
@@ -206,6 +217,7 @@ namespace ProyectoJuego15.Interface
             this.Btn4.TabIndex = 4;
             this.Btn4.Text = "4";
             this.Btn4.UseVisualStyleBackColor = true;
+            this.Btn4.Click += new System.EventHandler(this.Btn4_Click);
             // 
             // Btn2
             // 
@@ -216,6 +228,7 @@ namespace ProyectoJuego15.Interface
             this.Btn2.TabIndex = 2;
             this.Btn2.Text = "2";
             this.Btn2.UseVisualStyleBackColor = true;
+            this.Btn2.Click += new System.EventHandler(this.Btn2_Click);
             // 
             // Btn12
             // 
@@ -226,6 +239,7 @@ namespace ProyectoJuego15.Interface
             this.Btn12.TabIndex = 12;
             this.Btn12.Text = "12";
             this.Btn12.UseVisualStyleBackColor = true;
+            this.Btn12.Click += new System.EventHandler(this.Btn12_Click);
             // 
             // Btn3
             // 
@@ -236,6 +250,7 @@ namespace ProyectoJuego15.Interface
             this.Btn3.TabIndex = 3;
             this.Btn3.Text = "3";
             this.Btn3.UseVisualStyleBackColor = true;
+            this.Btn3.Click += new System.EventHandler(this.Btn3_Click);
             // 
             // Btn13
             // 
@@ -246,6 +261,7 @@ namespace ProyectoJuego15.Interface
             this.Btn13.TabIndex = 13;
             this.Btn13.Text = "13";
             this.Btn13.UseVisualStyleBackColor = true;
+            this.Btn13.Click += new System.EventHandler(this.Btn13_Click);
             // 
             // LblName
             // 
