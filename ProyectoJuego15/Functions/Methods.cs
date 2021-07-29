@@ -212,6 +212,23 @@ namespace ProyectoJuego15.Functions
             }
         }
 
+        public void ShowDatagrid(DataGridView table)
+        {
+            //Aquí se dice cuántas filas y columnas tiene que tener el DataGridView
+            table.RowCount = 10;
+            table.ColumnCount = 7;
+
+            for (int row = 0; row < 10; row++)
+            {
+                for (int column = 0; column < 7; column++)
+                {
+                    table.Rows[row].Cells[column].Value = rankingmatrix[row, column];
+
+
+                }
+            }
+        }
+
         public void EmptySpaceValidation(Button btn1, Button btn2)
         {
             if (btn2.Text == "")

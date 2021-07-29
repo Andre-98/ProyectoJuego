@@ -31,13 +31,13 @@ namespace ProyectoJuego15.Interface
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ranking));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnBack = new System.Windows.Forms.Button();
             this.Posicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Validos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Invalidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PuntosTotales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +57,42 @@ namespace ProyectoJuego15.Interface
             this.dataGridView1.Size = new System.Drawing.Size(645, 298);
             this.dataGridView1.TabIndex = 0;
             // 
+            // Posicion
+            // 
+            this.Posicion.HeaderText = "Posicion";
+            this.Posicion.Name = "Posicion";
+            this.Posicion.ReadOnly = true;
+            // 
+            // Jugador
+            // 
+            this.Jugador.HeaderText = "Jugador";
+            this.Jugador.Name = "Jugador";
+            this.Jugador.ReadOnly = true;
+            // 
+            // Tiempo
+            // 
+            this.Tiempo.HeaderText = "Tiempo";
+            this.Tiempo.Name = "Tiempo";
+            this.Tiempo.ReadOnly = true;
+            // 
+            // Validos
+            // 
+            this.Validos.HeaderText = "Validos";
+            this.Validos.Name = "Validos";
+            this.Validos.ReadOnly = true;
+            // 
+            // Invalidos
+            // 
+            this.Invalidos.HeaderText = "Invalidos";
+            this.Invalidos.Name = "Invalidos";
+            this.Invalidos.ReadOnly = true;
+            // 
+            // PuntosTotales
+            // 
+            this.PuntosTotales.HeaderText = "PuntosTotales";
+            this.PuntosTotales.Name = "PuntosTotales";
+            this.PuntosTotales.ReadOnly = true;
+            // 
             // BtnBack
             // 
             this.BtnBack.AutoSize = true;
@@ -69,36 +105,6 @@ namespace ProyectoJuego15.Interface
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = false;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
-            // 
-            // Posicion
-            // 
-            this.Posicion.HeaderText = "Posicion";
-            this.Posicion.Name = "Posicion";
-            // 
-            // Jugador
-            // 
-            this.Jugador.HeaderText = "Jugador";
-            this.Jugador.Name = "Jugador";
-            // 
-            // Tiempo
-            // 
-            this.Tiempo.HeaderText = "Tiempo";
-            this.Tiempo.Name = "Tiempo";
-            // 
-            // Validos
-            // 
-            this.Validos.HeaderText = "Validos";
-            this.Validos.Name = "Validos";
-            // 
-            // Invalidos
-            // 
-            this.Invalidos.HeaderText = "Invalidos";
-            this.Invalidos.Name = "Invalidos";
-            // 
-            // PuntosTotales
-            // 
-            this.PuntosTotales.HeaderText = "PuntosTotales";
-            this.PuntosTotales.Name = "PuntosTotales";
             // 
             // Ranking
             // 
@@ -114,6 +120,7 @@ namespace ProyectoJuego15.Interface
             this.Name = "Ranking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranking";
+            this.Load += new System.EventHandler(this.Ranking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

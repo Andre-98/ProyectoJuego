@@ -19,6 +19,11 @@ namespace ProyectoJuego15.Interface
             InitializeComponent();
         }
 
+        private void Ranking_Load(object sender, EventArgs e)
+        {
+            M.ShowDatagrid(dataGridView1);
+        }
+
         private void BtnBack_Click(object sender, EventArgs e)
         {
             Home H = new Home();
