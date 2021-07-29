@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 //Andreina Alfaro Obando, Joel Steven Valerio Mora
 
 namespace ProyectoJuego15.Functions
@@ -14,6 +15,34 @@ namespace ProyectoJuego15.Functions
         public int I = 0;
         public bool Paso, Paso2, Paso3, Rendirse;
         public static string[,] rankingmatrix = new string[10, 7];
+
+        public void EmptySpaceValidation(Button btn1, Button btn2)
+        {
+            if (btn2.Text == "")
+            {
+                btn2.Text = btn1.Text;
+                btn1.Text = "";
+                validos = validos + 1;
+                Paso = true;
+            }
+            else
+            {
+                I++;
+            }
+            if (I == 1 && Paso2 == false && Paso == false)
+            {
+                invalidos = invalidos + 1;
+                Paso2 = true;
+
+            }
+            if (Paso == true && Paso2 == true && Paso3 == false)
+            {
+                invalidos = invalidos - 1;
+                Paso3 = true;
+            }
+
+            acumulados = validos + invalidos;
+        }
 
         public void Juego()
         {
