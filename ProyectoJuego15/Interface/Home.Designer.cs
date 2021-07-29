@@ -29,8 +29,9 @@ namespace ProyectoJuego15
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.BtnInsert = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtName = new System.Windows.Forms.TextBox();
             this.BtnH = new System.Windows.Forms.Button();
             this.BtnV = new System.Windows.Forms.Button();
             this.BtnRanking = new System.Windows.Forms.Button();
@@ -46,14 +47,15 @@ namespace ProyectoJuego15
             this.BtnInsert.TabIndex = 0;
             this.BtnInsert.Text = "Insertar";
             this.BtnInsert.UseVisualStyleBackColor = true;
+            this.BtnInsert.Click += new System.EventHandler(this.BtnInsert_Click);
             // 
-            // textBox1
+            // TxtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(123, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 35);
-            this.textBox1.TabIndex = 1;
+            this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtName.Location = new System.Drawing.Point(123, 12);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(239, 35);
+            this.TxtName.TabIndex = 1;
             // 
             // BtnH
             // 
@@ -64,6 +66,7 @@ namespace ProyectoJuego15
             this.BtnH.TabIndex = 0;
             this.BtnH.Text = "Izquierda-Derecha";
             this.BtnH.UseVisualStyleBackColor = true;
+            this.BtnH.Click += new System.EventHandler(this.BtnH_Click);
             // 
             // BtnV
             // 
@@ -74,9 +77,11 @@ namespace ProyectoJuego15
             this.BtnV.TabIndex = 0;
             this.BtnV.Text = "Arriba-Abajo";
             this.BtnV.UseVisualStyleBackColor = true;
+            this.BtnV.Click += new System.EventHandler(this.BtnV_Click);
             // 
             // BtnRanking
             // 
+            this.BtnRanking.AutoSize = true;
             this.BtnRanking.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRanking.Location = new System.Drawing.Point(123, 247);
             this.BtnRanking.Name = "BtnRanking";
@@ -84,6 +89,7 @@ namespace ProyectoJuego15
             this.BtnRanking.TabIndex = 0;
             this.BtnRanking.Text = "Ver Ranking";
             this.BtnRanking.UseVisualStyleBackColor = true;
+            this.BtnRanking.Click += new System.EventHandler(this.BtnRanking_Click);
             // 
             // label1
             // 
@@ -100,13 +106,17 @@ namespace ProyectoJuego15
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackgroundImage = global::ProyectoJuego15.Properties.Resources.Fondo1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 311);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtName);
             this.Controls.Add(this.BtnRanking);
             this.Controls.Add(this.BtnV);
             this.Controls.Add(this.BtnH);
             this.Controls.Add(this.BtnInsert);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenida";
@@ -118,7 +128,7 @@ namespace ProyectoJuego15
         #endregion
 
         private System.Windows.Forms.Button BtnInsert;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.Button BtnH;
         private System.Windows.Forms.Button BtnV;
         private System.Windows.Forms.Button BtnRanking;

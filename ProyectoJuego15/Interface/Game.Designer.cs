@@ -29,6 +29,7 @@ namespace ProyectoJuego15.Interface
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Btn16 = new System.Windows.Forms.Button();
             this.Btn15 = new System.Windows.Forms.Button();
@@ -63,32 +64,34 @@ namespace ProyectoJuego15.Interface
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.Btn16);
-            this.panel1.Controls.Add(this.Btn15);
-            this.panel1.Controls.Add(this.Btn1);
-            this.panel1.Controls.Add(this.Btn14);
-            this.panel1.Controls.Add(this.Btn2);
-            this.panel1.Controls.Add(this.Btn13);
-            this.panel1.Controls.Add(this.Btn3);
-            this.panel1.Controls.Add(this.Btn12);
-            this.panel1.Controls.Add(this.Btn4);
             this.panel1.Controls.Add(this.Btn11);
-            this.panel1.Controls.Add(this.Btn5);
-            this.panel1.Controls.Add(this.Btn10);
             this.panel1.Controls.Add(this.Btn6);
+            this.panel1.Controls.Add(this.Btn15);
             this.panel1.Controls.Add(this.Btn9);
+            this.panel1.Controls.Add(this.Btn10);
+            this.panel1.Controls.Add(this.Btn1);
             this.panel1.Controls.Add(this.Btn7);
+            this.panel1.Controls.Add(this.Btn5);
+            this.panel1.Controls.Add(this.Btn14);
             this.panel1.Controls.Add(this.Btn8);
-            this.panel1.Location = new System.Drawing.Point(12, 75);
+            this.panel1.Controls.Add(this.Btn4);
+            this.panel1.Controls.Add(this.Btn2);
+            this.panel1.Controls.Add(this.Btn12);
+            this.panel1.Controls.Add(this.Btn3);
+            this.panel1.Controls.Add(this.Btn13);
+            this.panel1.Location = new System.Drawing.Point(49, 107);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(359, 293);
+            this.panel1.Size = new System.Drawing.Size(259, 233);
             this.panel1.TabIndex = 0;
             // 
             // Btn16
             // 
             this.Btn16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn16.Location = new System.Drawing.Point(241, 206);
+            this.Btn16.Location = new System.Drawing.Point(193, 174);
             this.Btn16.Name = "Btn16";
             this.Btn16.Size = new System.Drawing.Size(57, 51);
             this.Btn16.TabIndex = 16;
@@ -97,7 +100,7 @@ namespace ProyectoJuego15.Interface
             // Btn15
             // 
             this.Btn15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn15.Location = new System.Drawing.Point(178, 206);
+            this.Btn15.Location = new System.Drawing.Point(130, 174);
             this.Btn15.Name = "Btn15";
             this.Btn15.Size = new System.Drawing.Size(57, 51);
             this.Btn15.TabIndex = 15;
@@ -107,7 +110,7 @@ namespace ProyectoJuego15.Interface
             // Btn1
             // 
             this.Btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn1.Location = new System.Drawing.Point(52, 35);
+            this.Btn1.Location = new System.Drawing.Point(4, 3);
             this.Btn1.Name = "Btn1";
             this.Btn1.Size = new System.Drawing.Size(57, 51);
             this.Btn1.TabIndex = 1;
@@ -117,7 +120,7 @@ namespace ProyectoJuego15.Interface
             // Btn14
             // 
             this.Btn14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn14.Location = new System.Drawing.Point(115, 206);
+            this.Btn14.Location = new System.Drawing.Point(67, 174);
             this.Btn14.Name = "Btn14";
             this.Btn14.Size = new System.Drawing.Size(57, 51);
             this.Btn14.TabIndex = 14;
@@ -127,7 +130,7 @@ namespace ProyectoJuego15.Interface
             // Btn2
             // 
             this.Btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn2.Location = new System.Drawing.Point(115, 35);
+            this.Btn2.Location = new System.Drawing.Point(67, 3);
             this.Btn2.Name = "Btn2";
             this.Btn2.Size = new System.Drawing.Size(57, 51);
             this.Btn2.TabIndex = 2;
@@ -137,7 +140,7 @@ namespace ProyectoJuego15.Interface
             // Btn13
             // 
             this.Btn13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn13.Location = new System.Drawing.Point(52, 206);
+            this.Btn13.Location = new System.Drawing.Point(4, 174);
             this.Btn13.Name = "Btn13";
             this.Btn13.Size = new System.Drawing.Size(57, 51);
             this.Btn13.TabIndex = 13;
@@ -147,7 +150,7 @@ namespace ProyectoJuego15.Interface
             // Btn3
             // 
             this.Btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn3.Location = new System.Drawing.Point(178, 35);
+            this.Btn3.Location = new System.Drawing.Point(130, 3);
             this.Btn3.Name = "Btn3";
             this.Btn3.Size = new System.Drawing.Size(57, 51);
             this.Btn3.TabIndex = 3;
@@ -157,7 +160,7 @@ namespace ProyectoJuego15.Interface
             // Btn12
             // 
             this.Btn12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn12.Location = new System.Drawing.Point(241, 149);
+            this.Btn12.Location = new System.Drawing.Point(193, 117);
             this.Btn12.Name = "Btn12";
             this.Btn12.Size = new System.Drawing.Size(57, 51);
             this.Btn12.TabIndex = 12;
@@ -167,7 +170,7 @@ namespace ProyectoJuego15.Interface
             // Btn4
             // 
             this.Btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn4.Location = new System.Drawing.Point(241, 35);
+            this.Btn4.Location = new System.Drawing.Point(193, 3);
             this.Btn4.Name = "Btn4";
             this.Btn4.Size = new System.Drawing.Size(57, 51);
             this.Btn4.TabIndex = 4;
@@ -177,7 +180,7 @@ namespace ProyectoJuego15.Interface
             // Btn11
             // 
             this.Btn11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn11.Location = new System.Drawing.Point(178, 149);
+            this.Btn11.Location = new System.Drawing.Point(130, 117);
             this.Btn11.Name = "Btn11";
             this.Btn11.Size = new System.Drawing.Size(57, 51);
             this.Btn11.TabIndex = 11;
@@ -187,7 +190,7 @@ namespace ProyectoJuego15.Interface
             // Btn5
             // 
             this.Btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn5.Location = new System.Drawing.Point(52, 92);
+            this.Btn5.Location = new System.Drawing.Point(4, 60);
             this.Btn5.Name = "Btn5";
             this.Btn5.Size = new System.Drawing.Size(57, 51);
             this.Btn5.TabIndex = 5;
@@ -197,7 +200,7 @@ namespace ProyectoJuego15.Interface
             // Btn10
             // 
             this.Btn10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn10.Location = new System.Drawing.Point(115, 149);
+            this.Btn10.Location = new System.Drawing.Point(67, 117);
             this.Btn10.Name = "Btn10";
             this.Btn10.Size = new System.Drawing.Size(57, 51);
             this.Btn10.TabIndex = 10;
@@ -207,7 +210,7 @@ namespace ProyectoJuego15.Interface
             // Btn6
             // 
             this.Btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn6.Location = new System.Drawing.Point(115, 92);
+            this.Btn6.Location = new System.Drawing.Point(67, 60);
             this.Btn6.Name = "Btn6";
             this.Btn6.Size = new System.Drawing.Size(57, 51);
             this.Btn6.TabIndex = 6;
@@ -217,7 +220,7 @@ namespace ProyectoJuego15.Interface
             // Btn9
             // 
             this.Btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn9.Location = new System.Drawing.Point(52, 149);
+            this.Btn9.Location = new System.Drawing.Point(4, 117);
             this.Btn9.Name = "Btn9";
             this.Btn9.Size = new System.Drawing.Size(57, 51);
             this.Btn9.TabIndex = 9;
@@ -227,7 +230,7 @@ namespace ProyectoJuego15.Interface
             // Btn7
             // 
             this.Btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn7.Location = new System.Drawing.Point(178, 92);
+            this.Btn7.Location = new System.Drawing.Point(130, 60);
             this.Btn7.Name = "Btn7";
             this.Btn7.Size = new System.Drawing.Size(57, 51);
             this.Btn7.TabIndex = 7;
@@ -237,7 +240,7 @@ namespace ProyectoJuego15.Interface
             // Btn8
             // 
             this.Btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn8.Location = new System.Drawing.Point(241, 92);
+            this.Btn8.Location = new System.Drawing.Point(193, 60);
             this.Btn8.Name = "Btn8";
             this.Btn8.Size = new System.Drawing.Size(57, 51);
             this.Btn8.TabIndex = 8;
@@ -248,7 +251,7 @@ namespace ProyectoJuego15.Interface
             // 
             this.LblName.AutoSize = true;
             this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblName.Location = new System.Drawing.Point(9, 25);
+            this.LblName.Location = new System.Drawing.Point(27, 25);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(107, 29);
             this.LblName.TabIndex = 1;
@@ -258,7 +261,7 @@ namespace ProyectoJuego15.Interface
             // 
             this.LblTime.AutoSize = true;
             this.LblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTime.Location = new System.Drawing.Point(264, 25);
+            this.LblTime.Location = new System.Drawing.Point(300, 25);
             this.LblTime.Name = "LblTime";
             this.LblTime.Size = new System.Drawing.Size(103, 29);
             this.LblTime.TabIndex = 2;
@@ -267,8 +270,10 @@ namespace ProyectoJuego15.Interface
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(498, 75);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(476, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 29);
             this.label1.TabIndex = 3;
@@ -281,9 +286,9 @@ namespace ProyectoJuego15.Interface
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(245, 25);
+            this.label2.Size = new System.Drawing.Size(252, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Movimientos Inválidos";
+            this.label2.Text = "Movimientos Inválidos:";
             // 
             // LblMV
             // 
@@ -303,9 +308,9 @@ namespace ProyectoJuego15.Interface
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(3, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(229, 25);
+            this.label5.Size = new System.Drawing.Size(236, 25);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Movimientos Válidos";
+            this.label5.Text = "Movimientos Válidos:";
             // 
             // LblMI
             // 
@@ -325,7 +330,7 @@ namespace ProyectoJuego15.Interface
             this.panel2.Controls.Add(this.LblMI);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.LblMV);
-            this.panel2.Location = new System.Drawing.Point(389, 107);
+            this.panel2.Location = new System.Drawing.Point(377, 133);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(373, 96);
             this.panel2.TabIndex = 9;
@@ -334,15 +339,17 @@ namespace ProyectoJuego15.Interface
             // 
             this.BtnPay.BackColor = System.Drawing.Color.Gold;
             this.BtnPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.BtnPay.Location = new System.Drawing.Point(503, 209);
+            this.BtnPay.Location = new System.Drawing.Point(470, 235);
             this.BtnPay.Name = "BtnPay";
-            this.BtnPay.Size = new System.Drawing.Size(155, 42);
+            this.BtnPay.Size = new System.Drawing.Size(162, 50);
             this.BtnPay.TabIndex = 10;
             this.BtnPay.Text = "Me rindo";
             this.BtnPay.UseVisualStyleBackColor = false;
+            this.BtnPay.Click += new System.EventHandler(this.BtnPay_Click);
             // 
             // BtnBack
             // 
+            this.BtnBack.AutoSize = true;
             this.BtnBack.BackColor = System.Drawing.Color.Green;
             this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.BtnBack.Location = new System.Drawing.Point(12, 396);
@@ -351,6 +358,7 @@ namespace ProyectoJuego15.Interface
             this.BtnBack.TabIndex = 11;
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnExit
             // 
@@ -358,15 +366,18 @@ namespace ProyectoJuego15.Interface
             this.BtnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.BtnExit.Location = new System.Drawing.Point(674, 396);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(88, 42);
+            this.BtnExit.Size = new System.Drawing.Size(97, 42);
             this.BtnExit.TabIndex = 12;
             this.BtnExit.Text = "Salir";
             this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProyectoJuego15.Properties.Resources.Fondo1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnBack);
@@ -376,7 +387,10 @@ namespace ProyectoJuego15.Interface
             this.Controls.Add(this.LblTime);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
