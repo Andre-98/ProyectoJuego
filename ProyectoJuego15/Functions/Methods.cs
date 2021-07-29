@@ -16,9 +16,169 @@ namespace ProyectoJuego15.Functions
         public bool Paso, Paso2, Paso3, Rendirse;
         public static string[,] rankingmatrix = new string[10, 7];
 
+        public void RPoints()
+        {
+            if (acumulados <= 50)
+            {
+                ptsTotales = ptsTotales + 10;
+            }
+            else
+            {
+                if (acumulados <= 60)
+                {
+                    ptsTotales = ptsTotales + 9;
+                }
+                else
+                {
+                    if (acumulados <= 70)
+                    {
+                        ptsTotales = ptsTotales + 8;
+                    }
+                    else
+                    {
+                        if (acumulados <= 80)
+                        {
+                            ptsTotales = ptsTotales + 7;
+                        }
+                        else
+                        {
+                            if (acumulados <= 90)
+                            {
+                                ptsTotales = ptsTotales + 6;
+                            }
+                            else
+                            {
+                                if (acumulados <= 90)
+                                {
+                                    ptsTotales = ptsTotales + 6;
+                                }
+                                else
+                                {
+                                    if (acumulados <= 100)
+                                    {
+                                        ptsTotales = ptsTotales + 5;
+                                    }
+                                    else
+                                    {
+                                        if (acumulados <= 100)
+                                        {
+                                            ptsTotales = ptsTotales + 5;
+                                        }
+                                        else
+                                        {
+                                            if (acumulados <= 110)
+                                            {
+                                                ptsTotales = ptsTotales + 4;
+                                            }
+                                            else
+                                            {
+                                                if (acumulados <= 110)
+                                                {
+                                                    ptsTotales = ptsTotales + 4;
+                                                }
+                                                else
+                                                {
+                                                    if (acumulados <= 120)
+                                                    {
+                                                        ptsTotales = ptsTotales + 3;
+                                                    }
+                                                    else
+                                                    {
+                                                        if (acumulados <= 130)
+                                                        {
+                                                            ptsTotales = ptsTotales + 2;
+                                                        }
+                                                        else
+                                                        {
+                                                            if (acumulados >= 140)
+                                                            {
+                                                                ptsTotales = ptsTotales + 1;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (Convert.ToInt32(tiempo) <= 000300)
+            {
+                ptsTotales = ptsTotales + 10;
+            }
+            else
+            {
+                if (Convert.ToInt32(tiempo) <= 000400)
+                {
+                    ptsTotales = ptsTotales + 9;
+                }
+                else
+                {
+                    if (Convert.ToInt32(tiempo) <= 000500)
+                    {
+                        ptsTotales = ptsTotales + 8;
+                    }
+                    else
+                    {
+                        if (Convert.ToInt32(tiempo) <= 000600)
+                        {
+                            ptsTotales = ptsTotales + 7;
+                        }
+                        else
+                        {
+                            if (Convert.ToInt32(tiempo) <= 000700)
+                            {
+                                ptsTotales = ptsTotales + 6;
+                            }
+                            else
+                            {
+                                if (Convert.ToInt32(tiempo) <= 000800)
+                                {
+                                    ptsTotales = ptsTotales + 5;
+                                }
+                                else
+                                {
+                                    if (Convert.ToInt32(tiempo) <= 000900)
+                                    {
+                                        ptsTotales = ptsTotales + 4;
+                                    }
+                                    else
+                                    {
+                                        if (Convert.ToInt32(tiempo) <= 001000)
+                                        {
+                                            ptsTotales = ptsTotales + 3;
+                                        }
+                                        else
+                                        {
+                                            if (Convert.ToInt32(tiempo) <= 001100)
+                                            {
+                                                ptsTotales = ptsTotales + 2;
+                                            }
+                                            else
+                                            {
+                                                if (Convert.ToInt32(tiempo) >= 001200)
+                                                {
+                                                    ptsTotales = ptsTotales + 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         public void Insert1()
         {
-            //RPoints();
+            RPoints();
 
             for (int row = 0; row < 10; row++)
             {
