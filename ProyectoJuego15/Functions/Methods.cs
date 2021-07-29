@@ -16,6 +16,42 @@ namespace ProyectoJuego15.Functions
         public bool Paso, Paso2, Paso3, Rendirse;
         public static string[,] rankingmatrix = new string[10, 7];
 
+        public void Insert1()
+        {
+            //RPoints();
+
+            for (int row = 0; row < 10; row++)
+            {
+                if (rankingmatrix[row, 1] == null)
+                {
+                    if (Rendirse == true)
+                    {
+                        rankingmatrix[row, 1] = nombre + " (Se rindió)";
+                    }
+                    else
+                    {
+                        rankingmatrix[row, 1] = nombre;
+                    }
+                    rankingmatrix[row, 2] = h + ":" + m + ":" + s;
+                    rankingmatrix[row, 3] = validos.ToString();
+                    rankingmatrix[row, 4] = invalidos.ToString();
+                    rankingmatrix[row, 5] = acumulados.ToString();
+                    if (Rendirse == true)
+                    {
+                        ptsTotales = 0;
+                        rankingmatrix[row, 6] = ptsTotales.ToString();
+
+                    }
+                    else
+                    {
+                        rankingmatrix[row, 6] = ptsTotales.ToString();
+                    }
+
+                    break;
+                }
+            }
+        }
+
         public void EmptySpaceValidation(Button btn1, Button btn2)
         {
             if (btn2.Text == "")
