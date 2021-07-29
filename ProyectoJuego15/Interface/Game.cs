@@ -462,13 +462,35 @@ namespace ProyectoJuego15.Interface
 
         private void Btn13_Click(object sender, EventArgs e)
         {
-
-
+            SW.Start();
+            timer1.Enabled = true;
+            AsignarT();
+            M.EmptySpaceValidation(Btn13, Btn9);
+            M.EmptySpaceValidation(Btn13, Btn14);
+            LblMV.Text = M.validos.ToString();
+            LblMI.Text = M.invalidos.ToString();
+            ModoVerification();
+            M.I = 0;
+            M.Paso = false;
+            M.Paso2 = false;
+            M.Paso3 = false;
         }
 
         private void Btn14_Click(object sender, EventArgs e)
         {
-
+            SW.Start();
+            timer1.Enabled = true;
+            AsignarT();
+            M.EmptySpaceValidation(Btn14, Btn10);
+            M.EmptySpaceValidation(Btn14, Btn13);
+            M.EmptySpaceValidation(Btn14, Btn15);
+            LblMV.Text = M.validos.ToString();
+            LblMI.Text = M.invalidos.ToString();
+            ModoVerification();
+            M.I = 0;
+            M.Paso = false;
+            M.Paso2 = false;
+            M.Paso3 = false;
         }
 
         private void Btn15_Click(object sender, EventArgs e)
