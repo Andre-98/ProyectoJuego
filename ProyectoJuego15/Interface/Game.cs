@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 //Andreina Alfaro Obando, Joel Steven Valerio Mora
 
 namespace ProyectoJuego15.Interface
@@ -15,8 +16,9 @@ namespace ProyectoJuego15.Interface
     {
         public string Name, h, m, s;
         public int modo;
-
         Functions.Methods M = new Functions.Methods();
+        Stopwatch SW = new Stopwatch();
+        
         public Game()
         {
             InitializeComponent();
@@ -45,6 +47,7 @@ namespace ProyectoJuego15.Interface
             Btn15.Text = M.B15;
             Btn16.Text = M.B16;
         }
+
         public void AsignarT()
         {
             M.tiempo = h + m + s;
@@ -74,7 +77,7 @@ namespace ProyectoJuego15.Interface
                 Btn15.Text = "15";
                 Btn16.Text = "";
 
-                //SW.Stop();
+                SW.Stop();
                 AsignarT();
 
                 Btn1.Enabled = false;
@@ -138,7 +141,7 @@ namespace ProyectoJuego15.Interface
                 Btn15.Enabled = false;
                 Btn16.Enabled = false;
 
-                //SW.Stop();
+                SW.Stop();
                 AsignarT();
 
                 MessageBox.Show("Usted ha perdido :'(", "Rompecabezas numérico en orden Arriba-Abajo",
@@ -149,7 +152,6 @@ namespace ProyectoJuego15.Interface
                 M.Insert1();
 
             }
-
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
@@ -245,7 +247,13 @@ namespace ProyectoJuego15.Interface
 
         }
 
-
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan ts = new TimeSpan(0, 0, 0, 0, (int)SW.ElapsedMilliseconds);
+            h = ts.Hours.ToString().Length < 2 ? "0" + ts.Hours.ToString() : ts.Hours.ToString();
+            m = ts.Minutes.ToString().Length < 2 ? "0" + ts.Minutes.ToString() : ts.Minutes.ToString();
+            s = ts.Seconds.ToString().Length < 2 ? "0" + ts.Seconds.ToString() : ts.Seconds.ToString();
+            LblTime.Text = "Tiempo: " + h + ":" + m + ":" + s;
+        }
     }
 }

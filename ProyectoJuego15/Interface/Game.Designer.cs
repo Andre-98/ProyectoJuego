@@ -29,6 +29,7 @@ namespace ProyectoJuego15.Interface
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Btn16 = new System.Windows.Forms.Button();
@@ -58,6 +59,7 @@ namespace ProyectoJuego15.Interface
             this.BtnPay = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -388,6 +390,10 @@ namespace ProyectoJuego15.Interface
             this.BtnExit.UseVisualStyleBackColor = false;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,5 +453,6 @@ namespace ProyectoJuego15.Interface
         private System.Windows.Forms.Button BtnPay;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Button BtnExit;
+        private System.Windows.Forms.Timer timer1;
     }
 }
