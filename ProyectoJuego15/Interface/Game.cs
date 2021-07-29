@@ -48,6 +48,87 @@ namespace ProyectoJuego15.Interface
             Btn16.Text = M.B16;
         }
 
+        public void ModoVerification()
+        {
+            if (modo == 1)
+            {
+                SolutionValidationH();
+            }
+            else
+            {
+                SolutionValidationV();
+            }
+        }
+
+        public void SolutionValidationH()
+        {
+            if (Btn1.Text == "1" && Btn2.Text == "2" && Btn3.Text == "3" &&
+                Btn4.Text == "4" && Btn5.Text == "5" && Btn6.Text == "6" &&
+                Btn7.Text == "7" && Btn8.Text == "8" && Btn9.Text == "9" &&
+                Btn10.Text == "10" && Btn11.Text == "11" && Btn12.Text == "12" &&
+                Btn13.Text == "13" && Btn14.Text == "14" && Btn15.Text == "15")
+            {
+                Btn1.Enabled = false;
+                Btn2.Enabled = false;
+                Btn3.Enabled = false;
+                Btn4.Enabled = false;
+                Btn5.Enabled = false;
+                Btn6.Enabled = false;
+                Btn7.Enabled = false;
+                Btn8.Enabled = false;
+                Btn9.Enabled = false;
+                Btn10.Enabled = false;
+                Btn11.Enabled = false;
+                Btn12.Enabled = false;
+                Btn13.Enabled = false;
+                Btn14.Enabled = false;
+                Btn15.Enabled = false;
+                Btn16.Enabled = false;
+
+                SW.Stop();
+
+                M.Insert1();
+
+                MessageBox.Show("Felicidades, has ganado", "Rompecabezas numérico en orden Izquierda-Derecha",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        public void SolutionValidationV()
+        {
+            if (Btn1.Text == "1" && Btn2.Text == "5" && Btn3.Text == "9" &&
+                Btn4.Text == "13" && Btn5.Text == "2" && Btn6.Text == "6" &&
+                Btn7.Text == "10" && Btn8.Text == "14" && Btn9.Text == "3" &&
+                Btn10.Text == "7" && Btn11.Text == "11" && Btn12.Text == "15" &&
+                Btn13.Text == "4" && Btn14.Text == "8" && Btn15.Text == "12")
+            {
+                Btn1.Enabled = false;
+                Btn2.Enabled = false;
+                Btn3.Enabled = false;
+                Btn4.Enabled = false;
+                Btn5.Enabled = false;
+                Btn6.Enabled = false;
+                Btn7.Enabled = false;
+                Btn8.Enabled = false;
+                Btn9.Enabled = false;
+                Btn10.Enabled = false;
+                Btn11.Enabled = false;
+                Btn12.Enabled = false;
+                Btn13.Enabled = false;
+                Btn14.Enabled = false;
+                Btn15.Enabled = false;
+                Btn16.Enabled = false;
+
+                SW.Stop();
+
+                M.Insert1();
+
+                MessageBox.Show("Felicidades, has ganado", "Rompecabezas numérico en orden Arriba-Abajo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         public void AsignarT()
         {
             M.tiempo = h + m + s;
