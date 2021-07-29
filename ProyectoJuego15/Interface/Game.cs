@@ -244,8 +244,12 @@ namespace ProyectoJuego15.Interface
 
         private void BtnExit_Click(object sender, EventArgs e)
         {
+            DialogResult Salida = MessageBox.Show("Estás seguro de que deseas salir del juego?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-
+            if (Salida == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
         }
 
         private void Btn1_Click(object sender, EventArgs e)

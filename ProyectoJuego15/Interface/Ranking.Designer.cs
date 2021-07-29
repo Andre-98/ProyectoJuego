@@ -37,6 +37,7 @@ namespace ProyectoJuego15.Interface
             this.Tiempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Válidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Invalidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Acumulados = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PuntosTotales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,11 +51,12 @@ namespace ProyectoJuego15.Interface
             this.Tiempo,
             this.Válidos,
             this.Invalidos,
+            this.Acumulados,
             this.PuntosTotales});
             this.dataGridView1.Location = new System.Drawing.Point(12, 23);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(645, 298);
+            this.dataGridView1.Size = new System.Drawing.Size(723, 298);
             this.dataGridView1.TabIndex = 0;
             // 
             // BtnBack
@@ -62,7 +64,7 @@ namespace ProyectoJuego15.Interface
             this.BtnBack.AutoSize = true;
             this.BtnBack.BackColor = System.Drawing.Color.Green;
             this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.BtnBack.Location = new System.Drawing.Point(259, 339);
+            this.BtnBack.Location = new System.Drawing.Point(296, 339);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(164, 55);
             this.BtnBack.TabIndex = 12;
@@ -100,6 +102,12 @@ namespace ProyectoJuego15.Interface
             this.Invalidos.Name = "Invalidos";
             this.Invalidos.ReadOnly = true;
             // 
+            // Acumulados
+            // 
+            this.Acumulados.HeaderText = "Acumulados";
+            this.Acumulados.Name = "Acumulados";
+            this.Acumulados.ReadOnly = true;
+            // 
             // PuntosTotales
             // 
             this.PuntosTotales.HeaderText = "PuntosTotales";
@@ -112,7 +120,7 @@ namespace ProyectoJuego15.Interface
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoJuego15.Properties.Resources.Fondo1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(672, 406);
+            this.ClientSize = new System.Drawing.Size(746, 406);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -136,6 +144,7 @@ namespace ProyectoJuego15.Interface
         private System.Windows.Forms.DataGridViewTextBoxColumn Tiempo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Válidos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Invalidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Acumulados;
         private System.Windows.Forms.DataGridViewTextBoxColumn PuntosTotales;
     }
 }

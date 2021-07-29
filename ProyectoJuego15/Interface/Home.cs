@@ -30,14 +30,14 @@ namespace ProyectoJuego15
 
         private void BtnH_Click(object sender, EventArgs e)
         {
-            G.Modo = 1;
+            G.modo = 1;
             this.Hide();
             G.Show();
         }
 
         private void BtnV_Click(object sender, EventArgs e)
         {
-            G.Modo = 2;
+            G.modo = 2;
             this.Hide();
             G.Show();
         }
@@ -46,6 +46,11 @@ namespace ProyectoJuego15
         {
             this.Hide();
             R.Show();
+
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
 
         }
     }

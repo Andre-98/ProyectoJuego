@@ -48,54 +48,35 @@ namespace ProyectoJuego15.Functions
                             }
                             else
                             {
-                                if (acumulados <= 90)
+
+                                if (acumulados <= 100)
                                 {
-                                    ptsTotales = ptsTotales + 6;
+                                    ptsTotales = ptsTotales + 5;
                                 }
                                 else
                                 {
-                                    if (acumulados <= 100)
+                                    if (acumulados <= 110)
                                     {
-                                        ptsTotales = ptsTotales + 5;
+                                        ptsTotales = ptsTotales + 4;
                                     }
                                     else
                                     {
-                                        if (acumulados <= 100)
+
+                                        if (acumulados <= 120)
                                         {
-                                            ptsTotales = ptsTotales + 5;
+                                            ptsTotales = ptsTotales + 3;
                                         }
                                         else
                                         {
-                                            if (acumulados <= 110)
+                                            if (acumulados <= 130)
                                             {
-                                                ptsTotales = ptsTotales + 4;
+                                                ptsTotales = ptsTotales + 2;
                                             }
                                             else
                                             {
-                                                if (acumulados <= 110)
+                                                if (acumulados >= 140)
                                                 {
-                                                    ptsTotales = ptsTotales + 4;
-                                                }
-                                                else
-                                                {
-                                                    if (acumulados <= 120)
-                                                    {
-                                                        ptsTotales = ptsTotales + 3;
-                                                    }
-                                                    else
-                                                    {
-                                                        if (acumulados <= 130)
-                                                        {
-                                                            ptsTotales = ptsTotales + 2;
-                                                        }
-                                                        else
-                                                        {
-                                                            if (acumulados >= 140)
-                                                            {
-                                                                ptsTotales = ptsTotales + 1;
-                                                            }
-                                                        }
-                                                    }
+                                                    ptsTotales = ptsTotales + 1;
                                                 }
                                             }
                                         }
