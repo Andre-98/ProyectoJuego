@@ -31,13 +31,13 @@ namespace ProyectoJuego15.Interface
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ranking));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Posicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnBack = new System.Windows.Forms.Button();
+            this.Posición = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Validos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Válidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Invalidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PuntosTotales = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,10 +45,10 @@ namespace ProyectoJuego15.Interface
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Posicion,
+            this.Posición,
             this.Jugador,
             this.Tiempo,
-            this.Validos,
+            this.Válidos,
             this.Invalidos,
             this.PuntosTotales});
             this.dataGridView1.Location = new System.Drawing.Point(12, 23);
@@ -56,42 +56,6 @@ namespace ProyectoJuego15.Interface
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(645, 298);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Posicion
-            // 
-            this.Posicion.HeaderText = "Posicion";
-            this.Posicion.Name = "Posicion";
-            this.Posicion.ReadOnly = true;
-            // 
-            // Jugador
-            // 
-            this.Jugador.HeaderText = "Jugador";
-            this.Jugador.Name = "Jugador";
-            this.Jugador.ReadOnly = true;
-            // 
-            // Tiempo
-            // 
-            this.Tiempo.HeaderText = "Tiempo";
-            this.Tiempo.Name = "Tiempo";
-            this.Tiempo.ReadOnly = true;
-            // 
-            // Validos
-            // 
-            this.Validos.HeaderText = "Validos";
-            this.Validos.Name = "Validos";
-            this.Validos.ReadOnly = true;
-            // 
-            // Invalidos
-            // 
-            this.Invalidos.HeaderText = "Invalidos";
-            this.Invalidos.Name = "Invalidos";
-            this.Invalidos.ReadOnly = true;
-            // 
-            // PuntosTotales
-            // 
-            this.PuntosTotales.HeaderText = "PuntosTotales";
-            this.PuntosTotales.Name = "PuntosTotales";
-            this.PuntosTotales.ReadOnly = true;
             // 
             // BtnBack
             // 
@@ -105,6 +69,42 @@ namespace ProyectoJuego15.Interface
             this.BtnBack.Text = "Atrás";
             this.BtnBack.UseVisualStyleBackColor = false;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
+            // Posición
+            // 
+            this.Posición.HeaderText = "Posicion";
+            this.Posición.Name = "Posición";
+            this.Posición.ReadOnly = true;
+            // 
+            // Jugador
+            // 
+            this.Jugador.HeaderText = "Jugador";
+            this.Jugador.Name = "Jugador";
+            this.Jugador.ReadOnly = true;
+            // 
+            // Tiempo
+            // 
+            this.Tiempo.HeaderText = "Tiempo";
+            this.Tiempo.Name = "Tiempo";
+            this.Tiempo.ReadOnly = true;
+            // 
+            // Válidos
+            // 
+            this.Válidos.HeaderText = "Validos";
+            this.Válidos.Name = "Válidos";
+            this.Válidos.ReadOnly = true;
+            // 
+            // Invalidos
+            // 
+            this.Invalidos.HeaderText = "Invalidos";
+            this.Invalidos.Name = "Invalidos";
+            this.Invalidos.ReadOnly = true;
+            // 
+            // PuntosTotales
+            // 
+            this.PuntosTotales.HeaderText = "PuntosTotales";
+            this.PuntosTotales.Name = "PuntosTotales";
+            this.PuntosTotales.ReadOnly = true;
             // 
             // Ranking
             // 
@@ -131,10 +131,10 @@ namespace ProyectoJuego15.Interface
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnBack;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Posicion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Posición;
         private System.Windows.Forms.DataGridViewTextBoxColumn Jugador;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tiempo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Validos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Válidos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Invalidos;
         private System.Windows.Forms.DataGridViewTextBoxColumn PuntosTotales;
     }

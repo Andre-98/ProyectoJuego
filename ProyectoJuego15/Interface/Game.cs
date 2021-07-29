@@ -250,17 +250,52 @@ namespace ProyectoJuego15.Interface
 
         private void Btn1_Click(object sender, EventArgs e)
         {
-
+            SW.Start();
+            timer1.Enabled = true;
+            AsignarT();
+            M.EmptySpaceValidation(Btn1, Btn2);
+            M.EmptySpaceValidation(Btn1, Btn5);
+            LblMV.Text = M.validos.ToString();
+            LblMI.Text = M.invalidos.ToString();
+            ModoVerification();
+            M.I = 0;
+            M.Paso = false;
+            M.Paso2 = false;
+            M.Paso3 = false;
         }
 
         private void Btn2_Click(object sender, EventArgs e)
         {
-
+            SW.Start();
+            timer1.Enabled = true;
+            AsignarT();
+            M.EmptySpaceValidation(Btn2, Btn1);
+            M.EmptySpaceValidation(Btn2, Btn6);
+            M.EmptySpaceValidation(Btn2, Btn3);
+            LblMV.Text = M.validos.ToString();
+            LblMI.Text = M.invalidos.ToString();
+            ModoVerification();
+            M.I = 0;
+            M.Paso = false;
+            M.Paso2 = false;
+            M.Paso3 = false;
         }
 
         private void Btn3_Click(object sender, EventArgs e)
         {
-
+            SW.Start();
+            timer1.Enabled = true;
+            AsignarT();
+            M.EmptySpaceValidation(Btn3, Btn2);
+            M.EmptySpaceValidation(Btn3, Btn4);
+            M.EmptySpaceValidation(Btn3, Btn7);
+            LblMV.Text = M.validos.ToString();
+            LblMI.Text = M.invalidos.ToString();
+            ModoVerification();
+            M.I = 0;
+            M.Paso = false;
+            M.Paso2 = false;
+            M.Paso3 = false;
         }
 
         private void Btn4_Click(object sender, EventArgs e)
