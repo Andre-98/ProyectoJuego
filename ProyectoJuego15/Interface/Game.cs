@@ -87,6 +87,8 @@ namespace ProyectoJuego15.Interface
 
                 SW.Stop();
 
+                AsignarT();
+
                 M.Insert1();
 
                 MessageBox.Show("Felicidades, has ganado", "Rompecabezas numérico en orden Izquierda-Derecha",
@@ -121,6 +123,8 @@ namespace ProyectoJuego15.Interface
                 Btn16.Enabled = false;
 
                 SW.Stop();
+
+                AsignarT();
 
                 M.Insert1();
 
@@ -256,7 +260,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn1, Btn2);
             M.EmptySpaceValidation(Btn1, Btn5);
             LblMV.Text = M.validos.ToString();
@@ -272,7 +275,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn2, Btn1);
             M.EmptySpaceValidation(Btn2, Btn6);
             M.EmptySpaceValidation(Btn2, Btn3);
@@ -289,7 +291,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn3, Btn2);
             M.EmptySpaceValidation(Btn3, Btn4);
             M.EmptySpaceValidation(Btn3, Btn7);
@@ -306,7 +307,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn4, Btn3);
             M.EmptySpaceValidation(Btn4, Btn8);
             LblMV.Text = M.validos.ToString();
@@ -323,7 +323,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn5, Btn1);
             M.EmptySpaceValidation(Btn5, Btn6);
             M.EmptySpaceValidation(Btn5, Btn9);
@@ -341,7 +340,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn6, Btn2);
             M.EmptySpaceValidation(Btn6, Btn5);
             M.EmptySpaceValidation(Btn6, Btn7);
@@ -360,7 +358,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn7, Btn3);
             M.EmptySpaceValidation(Btn7, Btn6);
             M.EmptySpaceValidation(Btn7, Btn8);
@@ -378,7 +375,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn8, Btn4);
             M.EmptySpaceValidation(Btn8, Btn7);
             M.EmptySpaceValidation(Btn8, Btn12);
@@ -395,7 +391,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn9, Btn5);
             M.EmptySpaceValidation(Btn9, Btn10);
             M.EmptySpaceValidation(Btn9, Btn13);
@@ -412,7 +407,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn10, Btn6);
             M.EmptySpaceValidation(Btn10, Btn9);
             M.EmptySpaceValidation(Btn10, Btn11);
@@ -431,7 +425,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn11, Btn7);
             M.EmptySpaceValidation(Btn11, Btn10);
             M.EmptySpaceValidation(Btn11, Btn12);
@@ -450,7 +443,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn12, Btn8);
             M.EmptySpaceValidation(Btn12, Btn11);
             M.EmptySpaceValidation(Btn12, Btn16);
@@ -468,7 +460,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn13, Btn9);
             M.EmptySpaceValidation(Btn13, Btn14);
             LblMV.Text = M.validos.ToString();
@@ -484,7 +475,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn14, Btn10);
             M.EmptySpaceValidation(Btn14, Btn13);
             M.EmptySpaceValidation(Btn14, Btn15);
@@ -501,7 +491,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn15, Btn11);
             M.EmptySpaceValidation(Btn15, Btn14);
             M.EmptySpaceValidation(Btn15, Btn16);
@@ -519,7 +508,6 @@ namespace ProyectoJuego15.Interface
         {
             SW.Start();
             timer1.Enabled = true;
-            AsignarT();
             M.EmptySpaceValidation(Btn16, Btn12);
             M.EmptySpaceValidation(Btn16, Btn15);
             LblMV.Text = M.validos.ToString();
